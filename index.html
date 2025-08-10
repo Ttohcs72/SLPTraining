@@ -7,28 +7,101 @@
   <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
-  <div class="header">
-    <div class="header-inner">
-      <div class="logo-wrap">
-        <img src="https://media-exp1.licdn.com/dms/image/C560BAQH99ME8Za4uXw/company-logo_200_200/0?e=2159024400&v=beta&t=7ftiaTS4HHoGJYlC3s9mko0RjICpt1_L629LvfQi970" alt="Sizzling Platter"/>
-        <img src="https://logos-world.net/wp-content/uploads/2022/02/Little-Caesars-Logo-1971.png" alt="Little Caesars"/>
-      </div>
-      <div class="header-actions">
-        <button id="lang_toggle" class="btn">🌐 Español</button>
-      </div>
+  
+<div class="header">
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <img src="https://media-exp1.licdn.com/dms/image/C560BAQH99ME8Za4uXw/company-logo_200_200/0?e=2159024400&v=beta&t=7ftiaTS4HHoGJYlC3s9mko0RjICpt1_L629LvfQi970" alt="Sizzling Platter"/>
+      <img src="https://logos-world.net/wp-content/uploads/2022/02/Little-Caesars-Logo-1971.png" alt="Little Caesars"/>
+    </div>
+    <div class="header-actions">
+      <a href="index.html" class="btn btn-outline">Dashboard</a>
+      <button id="lang_toggle" class="btn">🌐 Español</button>
     </div>
   </div>
-  <div id="google_translate_element"></div>
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+<div id="google_translate_element"></div>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <div class="container">
     <h1>Manager Training Portal</h1>
+    <div class="meta">Choose a class below. Your progress saves in this browser.</div>
+
+    <div class="section-title">Overall Progress</div>
+    <div class="progress-outer"><div id="overall_progress" class="progress-inner"></div></div>
+    <div class="meta" id="completed_count" style="margin-top:6px;">0 / 12 completed</div>
+
+    <div class="section-title">Classes</div>
     <div class="grid">
-      <a class="card" href="class4.html"><h3>Class 4</h3><div class="meta">Assembly & Presentation</div></a>
-      <a class="card" href="final.html"><h3>Final Exam</h3><div class="meta">60 questions</div></a>
+      
+        <a class="card" href="class1.html">
+          <h3>Class 1: Orientation & Core Values</h3>
+          <div class="meta" id="c1_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class2.html">
+          <h3>Class 2: Fortress of Success Overview</h3>
+          <div class="meta" id="c2_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class3.html">
+          <h3>Class 3: Perfect Product: Dough, Sauce, Toppings</h3>
+          <div class="meta" id="c3_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class4.html">
+          <h3>Class 4: Perfect Product: Assembly & Presentation</h3>
+          <div class="meta" id="c4_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class5.html">
+          <h3>Class 5: Perfect People: Hiring & Training</h3>
+          <div class="meta" id="c5_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class6.html">
+          <h3>Class 6: Perfect People: Team Leadership</h3>
+          <div class="meta" id="c6_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class7.html">
+          <h3>Class 7: Perfect Place: Cleanliness & Ambience</h3>
+          <div class="meta" id="c7_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class8.html">
+          <h3>Class 8: Perfect Place: Safety & Security</h3>
+          <div class="meta" id="c8_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class9.html">
+          <h3>Class 9: Perfect Processes: Scheduling & Labor</h3>
+          <div class="meta" id="c9_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class10.html">
+          <h3>Class 10: Perfect Processes: Inventory & Food Cost</h3>
+          <div class="meta" id="c10_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class11.html">
+          <h3>Class 11: P&L, Budgets & Financial Acumen</h3>
+          <div class="meta" id="c11_status">Track progress locally</div>
+        </a>
+        
+        <a class="card" href="class12.html">
+          <h3>Class 12: Validation & GM Transition</h3>
+          <div class="meta" id="c12_status">Track progress locally</div>
+        </a>
+        
+      <a class="card" href="final.html">
+        <h3>Final Exam</h3>
+        <div class="meta" id="final_tile">🔒 Complete all 12 classes to unlock</div>
+        <div class="meta" id="final_lock"></div>
+      </a>
     </div>
   </div>
-
+  <div class="footer">© 2025 Sizzling Platter • Little Caesars Training</div>
   <script src="assets/portal.js"></script>
 </body>
 </html>
