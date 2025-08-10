@@ -27,3 +27,38 @@
 .cert-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.cert-field{background:#fafafa;border-radius:12px;padding:10px;border:1px solid #eee}
 .print-note{color:var(--muted);font-size:12px;margin-top:6px}.footer{text-align:center;padding:30px 16px;color:var(--muted)}
 #google_translate_element{display:none}.goog-te-banner-frame{display:none!important}body{top:0!important}.goog-logo-link,.goog-te-gadget span{display:none!important}
+/* --- Corner logos: small, one in each top corner --- */
+.header-inner{
+  position: relative;
+  min-height: 68px;           /* space for the corner logos */
+  justify-content: center;    /* keeps buttons centered */
+}
+.logo-wrap{ position: static; }  /* we’ll absolutely place the imgs */
+
+.logo-wrap img{
+  position: absolute;
+  top: 8px;
+  height: 36px;               /* SMALL logos */
+  width: auto;
+  object-fit: contain;
+}
+
+/* first logo = top-left, second logo = top-right */
+.logo-wrap img:first-of-type{ left: 16px; }
+.logo-wrap img:last-of-type{  right: 16px; }
+
+@media (min-width: 768px){
+  .logo-wrap img{ height: 44px; top: 10px; }  /* a bit larger on desktop */
+}
+
+/* center the header buttons (Dashboard / Language) */
+.header-actions{
+  margin-left: 0 !important;  /* override previous rule */
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+/* slightly smaller buttons so header feels lighter */
+.header .btn{ padding: 8px 12px; font-size: 14px; }
