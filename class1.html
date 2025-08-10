@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Class 1: Orientation & Core Values</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  
+<div class="header">
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <img src="https://media-exp1.licdn.com/dms/image/C560BAQH99ME8Za4uXw/company-logo_200_200/0?e=2159024400&v=beta&t=7ftiaTS4HHoGJYlC3s9mko0RjICpt1_L629LvfQi970" alt="Sizzling Platter"/>
+      <img src="https://logos-world.net/wp-content/uploads/2022/02/Little-Caesars-Logo-1971.png" alt="Little Caesars"/>
+    </div>
+    <div class="header-actions">
+      <a href="index.html" class="btn btn-outline">Dashboard</a>
+      <button id="lang_toggle" class="btn">🌐 Español</button>
+    </div>
+  </div>
+</div>
+<div id="google_translate_element"></div>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <div class="container">
+    <h1>Class 1: Orientation & Core Values</h1>
+    <div class="lesson-header">
+      <span class="pill">12 slides</span>
+      <span class="pill">Slide 13: Quiz (miss 1 allowed)</span>
+      <span class="pill">Use ← / → to navigate</span>
+    </div>
+    <div id="lesson_root"></div>
+  </div>
+  <div class="footer">© 2025 Sizzling Platter • Little Caesars Training</div>
+  <script src="assets/portal.js"></script>
+  <script>
+    const slidesData = [{"h": "Sizzling Platter Story (1963 → Today)", "body": "<p>From one Sizzler in Utah to a multi-brand operator in two countries—built on systems, people, and accountability.</p>"}, {"h": "Little Caesars Legacy (1959 → Hot‑N‑Ready®)", "body": "<ul><li>Affordable, consistent pizza at speed.</li><li>“Pizza! Pizza!®” value breakthrough.</li><li>Hot‑N‑Ready®: ready instantly—redefined convenience.</li></ul>"}, {"h": "Mission & GRIT", "body": "<ul><li>Mission: Unparalleled experiences + strong financial performance.</li><li>GRIT: Growth, Respect, Integrity, Teamwork.</li></ul>"}, {"h": "Guest Promise (Customer)", "body": "<p>“Serve each customer their perfect pizza, exactly when they want it and how they want it with a smile, every time!”</p>"}, {"h": "Operational Standard (HNR)", "body": "<p>“All required items are held 100% of the time and within shelf life.”</p>"}, {"h": "Pillars of Success (Fortress)", "body": "<ul><li>Perfect People</li><li>Perfect Product</li><li>Perfect Place</li><li>Perfect Processes</li></ul>"}, {"h": "Consistency Wins", "body": "<ul><li>Trust → loyalty → sales</li><li>Fewer remakes & complaints</li><li>Predictable outcomes</li></ul>"}, {"h": "Manager Cadence", "body": "<ul><li>Pre‑shift huddle</li><li>5‑minute walks</li><li>RSR & line checks</li><li>Close‑of‑day review</li></ul>"}, {"h": "Coaching in the Moment", "body": "<p>See it → Say it → Set it. Turn misses into learning immediately.</p>"}, {"h": "Metrics that Matter", "body": "<ul><li>Ticket time</li><li>Product accuracy %</li><li>Waste %</li><li>OOS incidents</li></ul>"}, {"h": "Scenario", "body": "<p>Cash drawer short $50; protect integrity, coach process, document.</p>"}, {"h": "Commitment", "body": "<p>Write one leadership habit you will start this week and how you will measure it.</p>"}];
+    const quizData = [["What is the primary objective of Orientation & Core Values?", ["Execute standards reliably every shift", "Reduce training", "Avoid documentation", "Eliminate checklists"]], ["Which action best demonstrates ownership?", ["Measure, coach, fix, and follow up", "Wait for corporate to notice", "Explain why it’s hard", "Change the subject"]], ["A strong daily cadence should:", ["Make misses visible and fixable", "Hide problems", "Add random tasks", "Delay decisions"]], ["When standards drift, managers should first:", ["Inspect the process and retrain on the spot", "Send a memo", "Cancel shifts", "Ignore until next week"]], ["What connects behavior to KPIs?", ["Clear checklists + live coaching", "End‑of‑month reports only", "Social media posts", "Vendor visits"]], ["Guest impact improves when managers:", ["Make consistency non‑negotiable", "Lower expectations", "Avoid feedback", "Cut coaching time"]], ["Best response to a safety concern?", ["Stop, correct, document, and retrain", "Note it for later", "Tell crew to be careful", "Assume luck will help"]], ["Role of recognition is to:", ["Reinforce the right behaviors", "Reduce payroll", "Replace training", "Handle terminations"]], ["After each shift, write:", ["A brief log of wins, misses, actions", "A holiday plan", "A marketing jingle", "Nothing—memory is enough"]], ["Protect brand trust by:", ["Recovering guest issues immediately and fully", "Offering future discounts only", "Debating the guest", "Delaying action until DM visit"]]];
+    renderClass(slidesData, quizData, 1);
+  </script>
+</body>
+</html>
